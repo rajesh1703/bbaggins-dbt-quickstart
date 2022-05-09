@@ -1,0 +1,1 @@
+select * from events where event_type = '{{ var("event_type") }}'
