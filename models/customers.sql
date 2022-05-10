@@ -1,1 +1,1 @@
-select * from events where event_type = '{{ var("event_type") }}'
+select * from raw.jaffle_shop.customers where hire_date = '{{ var("hire_date") }}'

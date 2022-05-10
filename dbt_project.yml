@@ -31,39 +31,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # In this example config, we tell dbt to build all models in the example/ directory
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
-models:
-  my_new_project:
-    # Applies to all files under models/example/
-    example:
-      materialized: view
 
-   name: my_dbt_project
-version: 1.0.0
-
-config-version: 2
 
 vars:
-  # The `start_date` variable will be accessible in all resources
-  start_date: '2016-06-01'
-
-  # The `platforms` variable is only accessible to resources in the my_dbt_project project
-  my_dbt_project:
-    platforms: ['web', 'mobile']
-
-  # The `app_ids` variable is only accessible to resources in the snowplow package
-  snowplow:
-    app_ids: ['marketing', 'app', 'landing-page']
-
-models:
-    ...
+    hire_date: '2016-06-01'
 
 
-
-    name: my_dbt_project
-version: 1.0.0
-
-config-version: 2
-
-# Define variables here
-vars:
-  event_type: activation
