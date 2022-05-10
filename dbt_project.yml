@@ -33,7 +33,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 
-vars:
-    hire_date: '2016-06-01'
+vars: 
+hire_date: '2022-05-09'
 
 
